@@ -1,0 +1,14 @@
+créer, 0N Utilisateur, 11 Quizz
+Utilisateur: code utilisateur, prénom, nom, email, mot de passe
+définir, 11 Question, 0N Difficulté
+Difficulté: code difficulté, label
+
+Quizz: code quizz, titre, thème, contexte
+composer, 11 Question, 1N Quizz
+Question: code question, question, description
+valider, 11 Question, 01 Réponse
+
+appartenir, 0N Quizz, 0N Catégorie
+Catégorie: code catégorie, nom
+proposer, 1N Question, 11 Réponse
+Réponse: code réponse, réponse
