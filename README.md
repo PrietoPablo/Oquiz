@@ -30,9 +30,9 @@ To use the app you can deploy the database locally with posgresql
     ```
 - deploy 
     ```
-    psql -U quiz -d quiz -f import_tables;
-    psql -U quiz -d quiz -f import_data;
-    psql -U quiz -d quiz -f migrate_user;
+    psql -U quiz -d quiz -f data/import_tables;
+    psql -U quiz -d quiz -f data/import_data;
+    psql -U quiz -d quiz -f data/migrate_user;
     ```
 
 now you have all you need to use the app locally. (don't forget you .env !)
